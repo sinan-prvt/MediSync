@@ -1,9 +1,41 @@
 {% extends "base.html" %}
 
 {% block title %}
-Contact
+Contact MediSync
 {% endblock %}
 
 {% block content %}
-<h2> Contact Page </h2>
-{% endblock  %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-5 text-center">
+                    <h2 class="fw-bold text-primary mb-4">Contact MediSync</h2>
+                    <p class="text-muted mb-5">
+                        We’re here to assist you. Get in touch with us through the following details:
+                    </p>
+
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-3">
+                            <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+                            <strong>Address:</strong> 123 Health Street, Kochi, India
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-telephone-fill text-success me-2"></i>
+                            <strong>Phone:</strong> +91 98765 43210
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-envelope-fill text-primary me-2"></i>
+                            <strong>Email:</strong> support@medisync.com
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-clock-fill text-warning me-2"></i>
+                            <strong>Hours:</strong> Mon - Sat: 8 AM – 8 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

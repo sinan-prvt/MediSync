@@ -1,19 +1,30 @@
 {% extends "base.html" %}
 
 {% block title %}
-Department
+Departments
 {% endblock %}
 
 {% block content %}
+<div class="container my-5">
+  <h2 class="text-center fw-bold text-primary mb-4">Our Departments</h2>
+  <p class="text-center text-muted mb-5">
+    MediSync offers specialized departments to provide you with the best care possible.
+  </p>
 
-<h1 class="text-center">Our Department</h1>
-<hr>
-{% for d in dept %}
-<div class="card text-white bg-success mx-auto my-4 w-50 border border-warning rounded shadow">
-  <div class="card-body text-center">
-    <h3 class="card-title">{{ d.dep_name }}</h3>
-    <p class="card-text">{{ d.dep_description }}</p>
+  <div class="row g-4">
+    {% for d in dept %}
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow border-0 rounded-4">
+        <div class="card-body text-center p-4">
+          <div class="mb-3">
+            <i class="fas fa-stethoscope fa-3x text-success"></i>
+          </div>
+          <h4 class="card-title fw-bold text-dark">{{ d.dep_name }}</h4>
+          <p class="card-text text-muted">{{ d.dep_description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
-{% endfor %}
-{% endblock  %}
+{% endblock %}
