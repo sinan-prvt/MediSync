@@ -1,0 +1,6 @@
+li:hover {
+    color: rgb(24, 24, 24);  
+    font-weight: bold;           
+    text-decoration: underline;  
+    cursor: pointer;            
+}
