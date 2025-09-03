@@ -5,7 +5,6 @@ from .models import Booking
 class DateInput(forms.DateInput):
     input_type = 'date'
 
-
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
@@ -14,7 +13,6 @@ class BookingForm(forms.ModelForm):
         widgets = {
             'booking_date' : DateInput(),
         }
-
 
         labels = {
             'p_name' : "Patient Name : ",
