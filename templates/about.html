@@ -1,67 +1,80 @@
 {% extends "base.html" %}
 
-{% block title %}
-About MediSync
-{% endblock %}
+{% block title %}About MediSync{% endblock %}
 
 {% block content %}
 {% load static %}
+
+<!-- ===== PAGE HEADER ===== -->
+<div class="page-header">
+    <div class="container">
+        <h2><i class="bi bi-info-circle me-2"></i>About MediSync</h2>
+        <p>Learn about our mission, vision, and commitment to your health</p>
+    </div>
+</div>
+
 <div class="container my-5">
-    <div class="row align-items-center">
-        <div class="col-md-6 mb-4">
-            <img src="{% static 'Images/MediSync.png' %}" 
-            class="img-fluid rounded-4 shadow" 
-            alt="Hospital Image">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-4 animate-fadeInUp">
+            <img src="{% static 'Images/MediSync.png' %}" class="img-fluid about-image" alt="Hospital Image">
         </div>
 
-        <div class="col-md-6">
-            <h1 class="fw-bold text-primary mb-3">About <span class="text-success">MediSync</span></h1>
+        <div class="col-md-6 animate-fadeInUp animate-delay-2">
+            <h2 class="fw-bold mb-3">
+                About <span style="color: var(--accent);">MediSync</span>
+            </h2>
             <p class="lead text-muted">
-                At <strong>MediSync</strong>, we believe in delivering world-class healthcare 
-                with compassion, innovation, and excellence.  
-                Our hospital integrates advanced medical technology with personalized care, 
+                At <strong>MediSync</strong>, we believe in delivering world-class healthcare
+                with compassion, innovation, and excellence.
+                Our hospital integrates advanced medical technology with personalized care,
                 ensuring that every patient receives the attention they deserve.
             </p>
             <p>
-                Founded with a vision to make healthcare accessible and affordable, 
-                MediSync provides a wide range of services including 
-                cardiology, neurology, pediatrics, emergency care, and more.  
-                With a team of highly skilled doctors, nurses, and staff, 
+                Founded with a vision to make healthcare accessible and affordable,
+                MediSync provides a wide range of services including
+                cardiology, neurology, pediatrics, emergency care, and more.
+                With a team of highly skilled doctors, nurses, and staff,
                 we are committed to improving lives every day.
             </p>
-            <a href="{% url 'booking' %}" class="btn btn-primary btn-lg mt-3">
-                Book an Appointment
+            <a href="{% url 'booking' %}" class="btn btn-gradient btn-lg mt-3">
+                <i class="bi bi-calendar-plus me-2"></i>Book an Appointment
             </a>
         </div>
     </div>
 
-    <div class="row text-center mt-5">
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 rounded-4 p-4">
-                <i class="bi bi-heart-pulse-fill text-danger" style="font-size: 2rem;"></i>
-                <h4 class="fw-bold mt-3">Our Mission</h4>
-                <p class="text-muted">
-                    To provide patient-centered healthcare with excellence in quality, 
+    <div class="row text-center g-4">
+        <div class="col-md-4 animate-fadeInUp animate-delay-1">
+            <div class="value-card h-100">
+                <div class="value-icon card-icon-red mx-auto">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <h4 class="fw-bold mt-2">Our Mission</h4>
+                <p class="text-muted mb-0">
+                    To provide patient-centered healthcare with excellence in quality,
                     service, and access.
                 </p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 rounded-4 p-4">
-                <i class="bi bi-lightbulb-fill text-warning" style="font-size: 2rem;"></i>
-                <h4 class="fw-bold mt-3">Our Vision</h4>
-                <p class="text-muted">
-                    To be a trusted leader in transforming healthcare, 
+        <div class="col-md-4 animate-fadeInUp animate-delay-2">
+            <div class="value-card h-100">
+                <div class="value-icon card-icon-orange mx-auto">
+                    <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <h4 class="fw-bold mt-2">Our Vision</h4>
+                <p class="text-muted mb-0">
+                    To be a trusted leader in transforming healthcare,
                     delivering hope, and advancing medical innovation.
                 </p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 rounded-4 p-4">
-                <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
-                <h4 class="fw-bold mt-3">Our Values</h4>
-                <p class="text-muted">
-                    Compassion, Integrity, Excellence, and Collaboration 
+        <div class="col-md-4 animate-fadeInUp animate-delay-3">
+            <div class="value-card h-100">
+                <div class="value-icon card-icon-blue mx-auto">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h4 class="fw-bold mt-2">Our Values</h4>
+                <p class="text-muted mb-0">
+                    Compassion, Integrity, Excellence, and Collaboration
                     form the foundation of our care.
                 </p>
             </div>

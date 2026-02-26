@@ -1,30 +1,30 @@
 {% extends "base.html" %}
 
-{% block title %}
-Confirmation
-{% endblock %}
+{% block title %}Booking Confirmed{% endblock %}
 
 {% block content %}
 <div class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-lg border-0 rounded-4">
-                <div class="card-body text-center p-5">
-                    <div class="mb-4">
-                        <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
-                    </div>
-
-                    <h2 class="fw-bold text-primary mb-3">Booking Confirmed</h2>
-
-                    <div class="alert alert-info rounded-3" role="alert">
-                        We have received your appointment request.  
-                        Our representative will call you shortly.  
-                    </div>
-
-                    <a href="{% url 'home' %}" class="btn btn-outline-primary btn-lg mt-3">
-                        Back to Home
-                    </a>
+        <div class="col-md-6 animate-fadeInUp">
+            <div class="info-card text-center p-5">
+                <div class="confirmation-icon mx-auto">
+                    <i class="bi bi-check-circle-fill"></i>
                 </div>
+
+                <h2 class="fw-bold mb-3" style="color: var(--accent);">Booking Confirmed!</h2>
+
+                <div class="p-3 mb-4"
+                    style="background: rgba(16,185,129,0.08); border-radius: var(--radius-sm); border: 1px solid rgba(16,185,129,0.15);">
+                    <p class="mb-0">
+                        <i class="bi bi-check2 text-success me-2"></i>
+                        We have received your appointment request.<br>
+                        Our representative will call you shortly.
+                    </p>
+                </div>
+
+                <a href="{% url 'home' %}" class="btn btn-gradient btn-lg">
+                    <i class="bi bi-house me-2"></i>Back to Home
+                </a>
             </div>
         </div>
     </div>
